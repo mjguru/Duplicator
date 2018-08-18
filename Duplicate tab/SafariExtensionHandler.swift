@@ -20,6 +20,24 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     override func toolbarItemClicked(in window: SFSafariWindow) {
         // This method will be called when your toolbar item is clicked.
         NSLog("The extension's toolbar item was clicked")
+       // let url = URL(string: "https://www.apple.com")
+      //  window.openTab(with: url!,makeActiveIfPossible: false)
+        window.getActiveTab() {
+            (tab: SFSafariTab?) in
+            tab?.getActivePage() {
+                (page: SFSafariPage?) in
+                page?.getPropertiesWithCompletionHandler() {
+                    (properties: SFSafariPageProperties?) in
+                    let url = properties?.url
+                    let urlString = url?.absoluteString
+                    if((urlString) != nil) {
+                        window.openTab(with: url!, makeActiveIfPossible: false, completionHandler: { (tab:SFSafariTab?) in
+                            NSLog("Done!")
+                        })
+                    }
+                }
+            }
+        }
     }
     
     override func validateToolbarItem(in window: SFSafariWindow, validationHandler: @escaping ((Bool, String) -> Void)) {

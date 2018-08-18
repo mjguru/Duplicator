@@ -30,10 +30,7 @@
 		<string>$(PRODUCT_MODULE_NAME).SafariExtensionHandler</string>
 		<key>SFSafariContentScript</key>
 		<array>
-			<dict>
-				<key>Script</key>
-				<string>script.js</string>
-			</dict>
+			<dict/>
 		</array>
 		<key>SFSafariToolbarItem</key>
 		<dict>
@@ -53,12 +50,12 @@
 				<string>*.webkit.org</string>
 			</array>
 			<key>Level</key>
-			<string>Some</string>
+			<string>All</string>
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2018 Mohit. All rights reserved.</string>
 	<key>NSHumanReadableDescription</key>
-	<string>This is a Safari Extension. You should tell us what your extension does here.</string>
+	<string>Just click on the toolbar and it will duplicate the current tab</string>
 </dict>
 </plist>

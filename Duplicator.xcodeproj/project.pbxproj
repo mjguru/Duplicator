@@ -17,7 +17,6 @@
 		E43A92022127FC12000D43DE /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A92012127FC12000D43DE /* SafariExtensionHandler.swift */; };
 		E43A92042127FC12000D43DE /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A92032127FC12000D43DE /* SafariExtensionViewController.swift */; };
 		E43A92072127FC12000D43DE /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E43A92052127FC12000D43DE /* SafariExtensionViewController.xib */; };
-		E43A920A2127FC12000D43DE /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = E43A92092127FC12000D43DE /* script.js */; };
 		E43A920C2127FC12000D43DE /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E43A920B2127FC12000D43DE /* ToolbarItemIcon.pdf */; };
 		E43A92102127FC12000D43DE /* Duplicate tab.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E43A91FC2127FC12000D43DE /* Duplicate tab.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -80,7 +79,6 @@
 		E43A92032127FC12000D43DE /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
 		E43A92062127FC12000D43DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		E43A92082127FC12000D43DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E43A92092127FC12000D43DE /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		E43A920B2127FC12000D43DE /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		E43A920D2127FC12000D43DE /* Duplicate_tab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Duplicate_tab.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,7 +185,6 @@
 				E43A92032127FC12000D43DE /* SafariExtensionViewController.swift */,
 				E43A92052127FC12000D43DE /* SafariExtensionViewController.xib */,
 				E43A92082127FC12000D43DE /* Info.plist */,
-				E43A92092127FC12000D43DE /* script.js */,
 				E43A920B2127FC12000D43DE /* ToolbarItemIcon.pdf */,
 				E43A920D2127FC12000D43DE /* Duplicate_tab.entitlements */,
 			);
@@ -350,7 +347,6 @@
 			files = (
 				E43A920C2127FC12000D43DE /* ToolbarItemIcon.pdf in Resources */,
 				E43A92072127FC12000D43DE /* SafariExtensionViewController.xib in Resources */,
-				E43A920A2127FC12000D43DE /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
