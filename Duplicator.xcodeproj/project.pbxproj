@@ -13,6 +13,13 @@
 		E43A91D42127FBF3000D43DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43A91D22127FBF3000D43DE /* Main.storyboard */; };
 		E43A91E02127FBF3000D43DE /* DuplicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A91DF2127FBF3000D43DE /* DuplicatorTests.swift */; };
 		E43A91EB2127FBF3000D43DE /* DuplicatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A91EA2127FBF3000D43DE /* DuplicatorUITests.swift */; };
+		E43A91FF2127FC12000D43DE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43A91FE2127FC12000D43DE /* Cocoa.framework */; };
+		E43A92022127FC12000D43DE /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A92012127FC12000D43DE /* SafariExtensionHandler.swift */; };
+		E43A92042127FC12000D43DE /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A92032127FC12000D43DE /* SafariExtensionViewController.swift */; };
+		E43A92072127FC12000D43DE /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E43A92052127FC12000D43DE /* SafariExtensionViewController.xib */; };
+		E43A920A2127FC12000D43DE /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = E43A92092127FC12000D43DE /* script.js */; };
+		E43A920C2127FC12000D43DE /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E43A920B2127FC12000D43DE /* ToolbarItemIcon.pdf */; };
+		E43A92102127FC12000D43DE /* Duplicate tab.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E43A91FC2127FC12000D43DE /* Duplicate tab.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +37,28 @@
 			remoteGlobalIDString = E43A91C82127FBF3000D43DE;
 			remoteInfo = Duplicator;
 		};
+		E43A920E2127FC12000D43DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43A91C12127FBF3000D43DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E43A91FB2127FC12000D43DE;
+			remoteInfo = "Duplicate tab";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E43A92142127FC12000D43DE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E43A92102127FC12000D43DE /* Duplicate tab.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E43A91C92127FBF3000D43DE /* Duplicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duplicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +74,15 @@
 		E43A91E62127FBF3000D43DE /* DuplicatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuplicatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43A91EA2127FBF3000D43DE /* DuplicatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicatorUITests.swift; sourceTree = "<group>"; };
 		E43A91EC2127FBF3000D43DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43A91FC2127FC12000D43DE /* Duplicate tab.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Duplicate tab.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43A91FE2127FC12000D43DE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E43A92012127FC12000D43DE /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		E43A92032127FC12000D43DE /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		E43A92062127FC12000D43DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		E43A92082127FC12000D43DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43A92092127FC12000D43DE /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		E43A920B2127FC12000D43DE /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		E43A920D2127FC12000D43DE /* Duplicate_tab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Duplicate_tab.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +107,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E43A91F92127FC12000D43DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43A91FF2127FC12000D43DE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +124,8 @@
 				E43A91CB2127FBF3000D43DE /* Duplicator */,
 				E43A91DE2127FBF3000D43DE /* DuplicatorTests */,
 				E43A91E92127FBF3000D43DE /* DuplicatorUITests */,
+				E43A92002127FC12000D43DE /* Duplicate tab */,
+				E43A91FD2127FC12000D43DE /* Frameworks */,
 				E43A91CA2127FBF3000D43DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +136,7 @@
 				E43A91C92127FBF3000D43DE /* Duplicator.app */,
 				E43A91DB2127FBF3000D43DE /* DuplicatorTests.xctest */,
 				E43A91E62127FBF3000D43DE /* DuplicatorUITests.xctest */,
+				E43A91FC2127FC12000D43DE /* Duplicate tab.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +172,28 @@
 			path = DuplicatorUITests;
 			sourceTree = "<group>";
 		};
+		E43A91FD2127FC12000D43DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E43A91FE2127FC12000D43DE /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E43A92002127FC12000D43DE /* Duplicate tab */ = {
+			isa = PBXGroup;
+			children = (
+				E43A92012127FC12000D43DE /* SafariExtensionHandler.swift */,
+				E43A92032127FC12000D43DE /* SafariExtensionViewController.swift */,
+				E43A92052127FC12000D43DE /* SafariExtensionViewController.xib */,
+				E43A92082127FC12000D43DE /* Info.plist */,
+				E43A92092127FC12000D43DE /* script.js */,
+				E43A920B2127FC12000D43DE /* ToolbarItemIcon.pdf */,
+				E43A920D2127FC12000D43DE /* Duplicate_tab.entitlements */,
+			);
+			path = "Duplicate tab";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,10 +204,12 @@
 				E43A91C52127FBF3000D43DE /* Sources */,
 				E43A91C62127FBF3000D43DE /* Frameworks */,
 				E43A91C72127FBF3000D43DE /* Resources */,
+				E43A92142127FC12000D43DE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E43A920F2127FC12000D43DE /* PBXTargetDependency */,
 			);
 			name = Duplicator;
 			productName = Duplicator;
@@ -180,6 +252,23 @@
 			productReference = E43A91E62127FBF3000D43DE /* DuplicatorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E43A91FB2127FC12000D43DE /* Duplicate tab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43A92112127FC12000D43DE /* Build configuration list for PBXNativeTarget "Duplicate tab" */;
+			buildPhases = (
+				E43A91F82127FC12000D43DE /* Sources */,
+				E43A91F92127FC12000D43DE /* Frameworks */,
+				E43A91FA2127FC12000D43DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Duplicate tab";
+			productName = "Duplicate tab";
+			productReference = E43A91FC2127FC12000D43DE /* Duplicate tab.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +293,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = E43A91C82127FBF3000D43DE;
 					};
+					E43A91FB2127FC12000D43DE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = E43A91C42127FBF3000D43DE /* Build configuration list for PBXProject "Duplicator" */;
@@ -222,6 +315,7 @@
 				E43A91C82127FBF3000D43DE /* Duplicator */,
 				E43A91DA2127FBF3000D43DE /* DuplicatorTests */,
 				E43A91E52127FBF3000D43DE /* DuplicatorUITests */,
+				E43A91FB2127FC12000D43DE /* Duplicate tab */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +341,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43A91FA2127FC12000D43DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43A920C2127FC12000D43DE /* ToolbarItemIcon.pdf in Resources */,
+				E43A92072127FC12000D43DE /* SafariExtensionViewController.xib in Resources */,
+				E43A920A2127FC12000D43DE /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +382,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E43A91F82127FC12000D43DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43A92042127FC12000D43DE /* SafariExtensionViewController.swift in Sources */,
+				E43A92022127FC12000D43DE /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +404,11 @@
 			target = E43A91C82127FBF3000D43DE /* Duplicator */;
 			targetProxy = E43A91E72127FBF3000D43DE /* PBXContainerItemProxy */;
 		};
+		E43A920F2127FC12000D43DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E43A91FB2127FC12000D43DE /* Duplicate tab */;
+			targetProxy = E43A920E2127FC12000D43DE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -300,6 +418,14 @@
 				E43A91D32127FBF3000D43DE /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E43A92052127FC12000D43DE /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43A92062127FC12000D43DE /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -414,6 +540,7 @@
 		E43A91F02127FBF3000D43DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Duplicator/Duplicator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -430,6 +557,7 @@
 		E43A91F12127FBF3000D43DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Duplicator/Duplicator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -509,6 +637,36 @@
 			};
 			name = Release;
 		};
+		E43A92122127FC12000D43DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Duplicate tab/Duplicate_tab.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z89JW82B2L;
+				INFOPLIST_FILE = "Duplicate tab/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mohit.Duplicator.Duplicate-tab";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		E43A92132127FC12000D43DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Duplicate tab/Duplicate_tab.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z89JW82B2L;
+				INFOPLIST_FILE = "Duplicate tab/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mohit.Duplicator.Duplicate-tab";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -544,6 +702,15 @@
 			buildConfigurations = (
 				E43A91F62127FBF3000D43DE /* Debug */,
 				E43A91F72127FBF3000D43DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43A92112127FC12000D43DE /* Build configuration list for PBXNativeTarget "Duplicate tab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43A92122127FC12000D43DE /* Debug */,
+				E43A92132127FC12000D43DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
