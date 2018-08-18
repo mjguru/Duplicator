@@ -1,2 +1,2 @@
 # Duplicator
-Duplicates safari extensions
+Safari extension to duplicate your current tab
